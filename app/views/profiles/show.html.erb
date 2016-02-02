@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div class="profile-wrapper">
+      <p id="notice"><%= notice %></p>
+
+      <p>
+        <strong>Age:</strong>
+        <%= @profile.age %>
+      </p>
+
+      <p>
+        <strong>School address:</strong>
+        <%= @profile.school_address %>
+      </p>
+
+      <%= link_to 'Edit', edit_profile_path(@profile) %> |
+      <%= link_to 'Back', profiles_path %> |
+      <%= link_to 'Destroy', @profile, method: :delete, data: { confirm: 'Are you sure?' } %>
+    </div>
+  </div>
+</div>

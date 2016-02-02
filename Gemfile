@@ -8,8 +8,14 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
+gem 'activeadmin', github: 'activeadmin'
+gem 'execjs'
+gem 'therubyracer', :platforms => :ruby
 group :development, :test do
   gem 'byebug'
+  gem 'pry-rails'
+  gem 'pry-nav'
+  gem 'pry-rescue'
 end
 group :development do
   gem 'web-console', '~> 2.0'

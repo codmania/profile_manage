@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :profiles
+  namespace :users do
+    end
   root to: 'visitors#index'
   devise_for :users, :controllers => {:registrations => "users/registrations"}
   resources :users
